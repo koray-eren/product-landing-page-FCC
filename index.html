@@ -63,9 +63,6 @@
         list-style: none;
         text-align: center;
     }
-    html{
-        min-width: 560px;
-    }
     h1{
         text-align: center;
     }
@@ -81,6 +78,11 @@
     a{
         color:#000;
         text-decoration: none;
+    }
+    @media screen and (max-width: 559px){
+        #video{
+            width:300px;
+        }
     }
 </style>
 
@@ -109,11 +111,11 @@
             </nav>
         </header>
 
-        <section style="margin-top: 120px" id="form">
+        <section style="margin-top: 120px">
             <div>
                 <h1>Handcrafted, home-made masterpieces</h1>
-                <form action="https://www.freecodecamp.com/email-submit">
-                    <input type="email" id="email" placeholder="Enter your email" required>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
                     <input id="submit" type="submit" value="Get Started" class="btn">
                 </form>
             </div>

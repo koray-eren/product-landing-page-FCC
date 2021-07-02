@@ -12,8 +12,8 @@
         box-sizing: border-box;
         top:0;
         left:0;
-        height: 50px;
-        /* TO DO: clean up - i added a whole bunch of stuff from the sample page code that idk what it does*/
+        background-color: white;
+        height:120px;
     }
     #header-img{
         align-self: flex-start;
@@ -22,7 +22,6 @@
         width: available;
         margin-top: 10px;
         padding: 0;
-        /* TO DO: make the logo bigger and responsive*/
     }
     #nav-bar{
         display: block;
@@ -35,14 +34,34 @@
         margin-left: auto;
         margin-right: auto;
     }
+    #pricing{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .tromboneInfo{
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+        border:1px solid #000000;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
     ul{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         width: 40vw;
     }
+    ol{
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+    }
     li{
         list-style: none;
+        text-align: center;
     }
     html{
         min-width: 560px;
@@ -50,11 +69,18 @@
     h1{
         text-align: center;
     }
+    h3{
+        margin:0;
+    }
     body{
         text-align: center;
     }
     section{
         margin-top:50px;
+    }
+    a{
+        color:#000;
+        text-decoration: none;
     }
 </style>
 
@@ -87,14 +113,26 @@
             <div>
                 <h1>Handcrafted, home-made masterpieces</h1>
                 <form action="https://www.freecodecamp.com/email-submit">
-                    <input type="email" id="email" placeholder="Enter your email">
+                    <input type="email" id="email" placeholder="Enter your email" required>
                     <input id="submit" type="submit" value="Get Started" class="btn">
                 </form>
             </div>
         </section>
 
         <section id="features">
-            <div> test </div>
+            <div>
+                <h2>Premium materials </h2>
+                The finest brass, top notch craftsmanship, amazing buttons
+            </div>
+            <div>
+                <h2>Fast Shipping </h2>
+                Ships within 24 hours, free express shipping
+            </div>
+
+            <div>
+                <h2>Quality Assurance </h2>
+                The quality of your purchase is assured
+            </div>
         </section>
 
         <section id="how-it-works">
@@ -102,7 +140,37 @@
         </section>
 
         <section id="pricing">
-            <div> test </div>
+            <div class="tromboneInfo">
+                <h2> Trombone 1 </h2>
+                <h3>$500</h3>
+                <ol>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ol>
+                <button class="btn">SELECT</button>
+            </div>
+            <div class="tromboneInfo">
+                <h2> Trombone 2 </h2>
+                <h3>$700</h3>
+                <ol>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ol>
+                <button class="btn">SELECT</button>
+            </div>
+            <div class="tromboneInfo">
+                <h2> Trombone 3 </h2>
+                <h3>$900</h3>
+                <ol>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ol>
+                <button class="btn">SELECT</button>
+            </div>
         </section>
+
     </body>
 </html>
